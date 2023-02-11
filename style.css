@@ -1,0 +1,125 @@
+#results{
+    display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* background-color: peachpuff; */
+
+    
+    /* justify-content: center; */
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 20px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+}
+.global-navbar .navbar{
+    
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    height: 80px;
+    justify-content:space-between;
+}
+.navbar .leftpart{
+    display: flex;
+    align-items: center;
+}
+.navbar .leftpart .image{
+    display: block;
+    margin: 16px;
+}
+.leftpart .image:hover{
+    transform: scale(1.3);
+}
+
+.navbar .rightpart{
+    position: relative; 
+}
+.rightpart .navbar_option{
+    display: flex;
+}
+.navbar_option li{
+    list-style: none;
+    margin-right: 56px;
+    font-size: 15px;
+    padding-top: 25px;
+}
+.rightpart .nav-item{
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    height: 80px;
+    cursor: pointer;
+    
+}
+.rightpart li:hover{
+    border: none;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100;
+    box-sizing: border-box;
+    border-radius: 33px
+}
+
+.navbar_option li .nav-items a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    
+}
+span.title{
+    padding-left: 11px;
+}
+.container:hover{
+   border: 1px solid rgb(206, 194, 194);
+   transition: all 1s; 
+}
+.container{
+    /* background-color: whitesmoke; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    top: 150px;
+   box-shadow: 0 10px 10px rgb(40 44 63 / 25%);
+}
+
+
+
+  .fade-in-image {
+    animation: fadeIn 2s;
+    transition: all 3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  .fade-out-image {
+    animation: fadeOut 2s;
+    transition: all 2s ease-in-out;
+  }
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
